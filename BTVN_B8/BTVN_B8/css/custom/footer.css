@@ -1,0 +1,16 @@
+footer {
+  background-color: #3b4a6b;
+  margin-top: 50px;
+}
+.col-3 {
+  margin-top: 30px;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+a:hover{
+    color: yellow;
+}

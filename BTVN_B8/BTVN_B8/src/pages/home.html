@@ -1,0 +1,157 @@
+<section>
+  <div class="slideShow">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/slide2.png" class="d-block w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/slide2.png" class="d-block w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/slide2.png" class="d-block w-100" alt="" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <h2 class="title_header">Latest Watches</h2>
+      <div class="row" ng-option="dh in listDongHo">
+        <div class="col-lg-6">
+          <a href="#details/{{listDongHo[0].id}}">
+            <div class="card" ng-click="selectProduct(dh)">
+              <div class="img">
+                <img src="{{listDongHo[0].images}}" class="img" alt="" />
+              </div>
+              <div class="card-text">
+                <span>{{listDongHo[0].name}}</span>
+                <span class="price">Price: ${{listDongHo[0].price}}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" ng-click="detail">
+              <div class="img">
+                <img src="{{listDongHo[1].images}}" alt="" />
+              </div>
+              <div class="card-text">
+                <span>{{listDongHo[1].name}}</span>
+                <span class="price">Price: ${{listDongHo[1].price}}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" ng-click="detail">
+              <div class="img">
+                <img src="{{listDongHo[2].images}}" alt="" />
+              </div>
+              <div class="card-text">
+                <span>{{listDongHo[2].name}}</span>
+                <span class="price">Price: ${{listDongHo[2].price}}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row" ng-option="dh in listDongHo">
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" ng-click="detail">
+              <div class="img">
+                <img src="{{listDongHo[3].images}}" alt="" />
+              </div>
+              <div class="card-text">
+                <span>{{listDongHo[3].name}}</span>
+                <span class="price">Price: ${{listDongHo[3].price}}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" ng-click="detail">
+              <div class="img">
+                <img src="{{listDongHo[4].images}}" alt="" />
+              </div>
+              <div class="card-text">
+                <span>{{listDongHo[4].name}}</span>
+                <span class="price">Price: ${{listDongHo[4].price}}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" ng-click="detail">
+              <div class="img">
+                <img src="{{listDongHo[5].images}}" alt="" />
+              </div>
+              <div class="card-text">
+                <span>{{listDongHo[5].name}}</span>
+                <span class="price">Price: ${{listDongHo[5].price}}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#">
+            <div class="card" ng-click="detail">
+              <div class="img">
+                <img src="{{listDongHo[6].images}}" alt="" />
+              </div>
+              <div class="card-text">
+                <span>{{listDongHo[6].name}}</span>
+                <span class="price">Price: ${{listDongHo[6].price}}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

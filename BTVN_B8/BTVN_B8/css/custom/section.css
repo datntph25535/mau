@@ -1,0 +1,16 @@
+.card {
+  background-color: #faf9fa;
+  margin-top: 30px;
+}
+.card-text {
+  color: black;
+  font-weight: 500;
+}
+.card-text .price {
+  float: right;
+}
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
